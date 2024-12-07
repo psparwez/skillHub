@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillHub | A Eduaction landing page</title>
+
+    <!-- --------------- Google font link links --------------------  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ----------------- Remix icons Links -----------------------  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- ------------------ Custom CSS -------------------------------- -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ================================= NAVBAR =========================  -->
+    <header>
+      <nav class="nav">
+        <a href="#" class="logo">
+          <img src="/assets/images/logo.png" alt="" />
+        </a>
+        <ul class="nav__lists">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#online-learning">Online Learning</a></li>
+
+          <a href="javascript:void()" class="btn login-btn show-small"
+            >log In</a
+          >
+        </ul>
+
+        <a href="javascript:void()" class="btn login-btn hide-small">log In</a>
+
+        <!-- Hamburger menu  -->
+        <button class="hamburger-menu-btn" id="menuBtn">
+          <i class="ri-menu-line"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ================================= HERO SECTION =========================  -->
+
+    <section class="home" id="home">
+      <div class="container home__container">
+        <div class="home__row">
+          <div class="home__col left">
+            <div class="small-card">
+              Grow yourself with us <i class="ri-graduation-cap-fill"></i>
+            </div>
+            <h1 class="heading">Grow your skill & get world class job’s</h1>
+            <p class="description home-description">
+              Non-disclosure agreement seed round seed money accelerator
+              influencer. Growth hacking return nondis sure agreement seed round
+              seed .
+            </p>
+
+            <div class="search__box">
+              <form action="#">
+                <input type="text" placeholder="Search for courses" required />
+                <button type="submit" class="search-btn btn-primary">
+                  Search
+                </button>
+                <i class="ri-search-line"></i>
+              </form>
+            </div>
+          </div>
+          <div class="home__col right">
+            <div class="home__image">
+              <img src="/assets/images/hero-img.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================= ABOUT SECTION =========================  -->
+
+    <section class="about" id="about">
+      <div class="container about__container">
+        <div class="about__iamge">
+          <img src="/assets/images/img-1.png" alt="" />
+        </div>
+        <div class="about__col">
+          <h2 class="heading">Over 1M+ Students get’s job</h2>
+          <p>
+            Non-disclosure agreement seed round seed money accelerator
+            influencer. Growth hacking return nondis sure .
+          </p>
+          <p>
+            Non-disclosure agreement seed round seed money accelerator
+            influencer.
+          </p>
+          <a href="javascript:void()" class="btn-primary explore-btn"
+            >Explore More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="resouces" id="resources">
+      <div class="container resources__container">
+        <div class="center__text">
+          <h3 class="heading">How it works</h3>
+          <p>
+            Non-disclosure agreement seed round seed money accelerator
+            influencer.
+          </p>
+        </div>
+
+        <div class="resources__row">
+          <div class="resources__col left">
+            <div class="first-style how-work-card">
+              <div class="resources__card">
+                <div class="card__header">
+                  <img src="/assets/images/icon-1.png" alt="" />
+                  <h3>Select a course</h3>
+                </div>
+                <p>
+                  Non-disclosure agreement seed round seed money accelerator
+                  influencer.
+                </p>
+              </div>
+            </div>
+            <div class="first-style paddx">
+              <div class="resources__card">
+                <div class="card__header">
+                  <img src="/assets/images/icon-2.png" alt="" />
+                  <h3>Fill it up & give payment</h3>
+                </div>
+                <p>
+                  Non-disclosure agreement seed round seed money accelerator
+                  influencer.
+                </p>
+              </div>
+            </div>
+            <div class="first-style paddx">
+              <div class="resources__card">
+                <div class="card__header">
+                  <img src="/assets/images/icon-3.png" alt="" />
+                  <h3>Start build yourself</h3>
+                </div>
+                <p>
+                  Non-disclosure agreement seed round seed money accelerator
+                  influencer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="resources__col">
+            <div class="resources__image">
+              <img src="/assets/images/img-2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================= COURSES SECTION =========================  -->
+
+    <section class="courses" id="courses">
+      <div class="container coureses__container">
+        <div class="center__text">
+          <h3 class="heading">Our popular courses</h3>
+          <p>
+            Non-disclosure agreement seed round seed money accelerator
+            influencer.
+          </p>
+        </div>
+
+        <!-- Swiper -->
+        <div class="popular__courses swiper mySwiper">
+          <div class="swiper-wrapper popular__courses-lists">
+            <!-- Course 1  -->
+            <div class="swiper-slide popular__card">
+              <img src="/assets/images/course-1.png" alt="" />
+              <h3>Graphic design course</h3>
+
+              <div class="ratings">
+                <div class="stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <p class="price">$119</p>
+              </div>
+              <div class="short__details">
+                <div class="join">
+                  <i class="ri-group-fill"></i>
+                  <span>25K+ Students</span>
+                </div>
+                <a href="javascript:void()" class="join-btn">Join Now</a>
+              </div>
+            </div>
+            <!-- Course 2  -->
+            <div class="swiper-slide popular__card">
+              <img src="/assets/images/course-2.png" alt="" />
+              <h3>Illustration design course</h3>
+
+              <div class="ratings">
+                <div class="stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <p class="price">$119</p>
+              </div>
+              <div class="short__details">
+                <div class="join">
+                  <i class="ri-group-fill"></i>
+                  <span>25K+ Students</span>
+                </div>
+                <a href="javascript:void()" class="join-btn">Join Now</a>
+              </div>
+            </div>
+
+            <!-- Course 3  -->
+            <div class="swiper-slide popular__card">
+              <img src="/assets/images/course-3.png" alt="" />
+              <h3>UI/UX design course</h3>
+
+              <div class="ratings">
+                <div class="stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <p class="price">$119</p>
+              </div>
+              <div class="short__details">
+                <div class="join">
+                  <i class="ri-group-fill"></i>
+                  <span>25K+ Students</span>
+                </div>
+                <a href="javascript:void()" class="join-btn">Join Now</a>
+              </div>
+            </div>
+
+            <!-- Course 4  -->
+            <div class="swiper-slide popular__card">
+              <img src="/assets/images/course-4.png" alt="" />
+              <h3>Web development course</h3>
+
+              <div class="ratings">
+                <div class="stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <p class="price">$119</p>
+              </div>
+              <div class="short__details">
+                <div class="join">
+                  <i class="ri-group-fill"></i>
+                  <span>25K+ Students</span>
+                </div>
+                <a href="javascript:void()" class="join-btn">Join Now</a>
+              </div>
+            </div>
+
+            <!-- Course 5  -->
+            <div class="swiper-slide popular__card">
+              <img
+                src="/assets/images/Figma redesign.jpg"
+                alt=""
+                height="199"
+                width="265"
+                class="figma-img"
+              />
+              <h3>Figma Desinger Expert</h3>
+
+              <div class="ratings">
+                <div class="stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <p class="price">$119</p>
+              </div>
+              <div class="short__details">
+                <div class="join">
+                  <i class="ri-group-fill"></i>
+                  <span>25K+ Students</span>
+                </div>
+                <a href="javascript:void()" class="join-btn">Join Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination" id="swip-btns"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================= QUERY SECTION =========================  -->
+    <section class="query">
+      <div class="container query__container">
+        <div class="query__image">
+          <img src="/assets/images/img-3.png" alt="" />
+        </div>
+        <div class="query__col">
+          <h2 class="heading">Do you have any query?</h2>
+          <p>Non-disclosure agreement seed.</p>
+
+          <div class="search__box">
+            <form action="#">
+              <input type="text" placeholder="Search for courses" required />
+              <button type="submit" class="search-btn btn-primary">
+                Search
+              </button>
+              <i class="ri-search-line"></i>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="right-img">
+        <img src="/assets/images/img-4.png" height="80" width="80" alt="" />
+      </div>
+    </section>
+
+    <!-- ================================= FOOTER  =========================  -->
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__col first">
+          <img
+            src="/assets/images/logo-white.png"
+            alt=""
+            class="logo footer-logo"
+          />
+          <p>
+            Non-disclosure agreement seed round seed money accelerator
+            influencer. Growth hacking return nondis sure agreement .
+          </p>
+          <div class="footer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <i class="ri-linkedin-box-fill"></i>
+          </div>
+        </div>
+        <div class="footer__col second">
+          <h3>About Product</h3>
+          <ul>
+            <li><a href="javascript:void()">Patch</a></li>
+            <li><a href="javascript:void()">Updates</a></li>
+            <li><a href="javascript:void()">Beta Test</a></li>
+            <li><a href="javascript:void()">Pricing Product</a></li>
+          </ul>
+        </div>
+        <div class="footer__col third">
+          <h3>Help and Solutions</h3>
+          <ul>
+            <li><a href="javascript:void()">Talk to support</a></li>
+            <li><a href="javascript:void()">Support docs</a></li>
+            <li><a href="javascript:void()">System status</a></li>
+          </ul>
+        </div>
+        <div class="footer__col forth">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="javascript:void()">Help center </a></li>
+            <li><a href="javascript:void()">Account Information </a></li>
+            <li><a href="javascript:void()">About</a></li>
+            <li><a href="javascript:void()">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <div class="brand-name">&copy; skillHub, 2024</div>
+        <div class="terms-link">
+          <a href="javascript:void()">Terms & Conditions</a> |
+          <a href="javascript:void()">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          900: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+
+    <!-- || Custom JS  -->
+    <script src="./main.js"></script>
+  </body>
+</html>
